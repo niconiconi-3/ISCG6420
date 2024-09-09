@@ -2,7 +2,8 @@ window.onload = function () {
     let scene = 0;
     let scenes = [
         document.getElementById("sidebarScene1"),
-        document.getElementById("sidebarScene2")
+        document.getElementById("sidebarScene2"),
+        document.getElementById("sidebarScene3")
     ];
     let timer = null;
 

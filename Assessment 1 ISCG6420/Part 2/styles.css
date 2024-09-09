@@ -217,7 +217,7 @@ section {
     position: absolute;
     top: 140px;
     left: 1000px;
-    font-size: 10px;
+    font-size: 8px;
     color: rgb(255, 255, 255);
 
     overflow: hidden;
@@ -359,170 +359,6 @@ section {
 }
 
 
-
-#sidebarAd {
-    overflow: hidden;
-    width: 350px;
-    height: 800px;
-    margin-left: 20px;
-}
-
-#sidebarScene1 {
-    position: absolute;
-    overflow: hidden;
-    width: 350px;
-    height: 800px;
-    visibility: visible;
-}
-
-#sidebarScene1 > img {
-    position: absolute;
-    width: 310px;
-    top: 0px;
-    left: -0px;
-
-    animation-name: background-zoomOut;
-    animation-duration: 5s;
-
-}
-
-#sidebarScene2 {
-    position: absolute;
-    overflow: hidden;
-
-    width: 350px;
-    height: 800px;
-    visibility: hidden;
-}
-
-#sidebarScene2 > img {
-    position: absolute;
-    width: 350px;
-    top: 0px;
-    left: -0px;
-}
-
-#sidebarReplay {
-    position: absolute;
-    font-size: 30px;
-    left: 120px;
-    top: 20px;
-}
-
-#sidebarScene1Line1 {
-    position: absolute;
-    top: 110px;
-    left: 10px;
-    font-size: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
-    color: white;
-
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-
-    animation-name: Line1Unveil;
-    animation-duration: 5s;
-}
-
-#sidebarScene1Line2 {
-    position: absolute;
-    top: 180px;
-    left: 12px;
-    font-size: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
-    color: white;
-
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-
-    animation-name: Line1Unveil;
-    animation-duration: 10s;
-}
-
-#sidebarScene1Line3 {
-    position: absolute;
-    top: 250px;
-    left: 14px;
-    font-size: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
-    color: white;
-
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-
-    animation-name: Line1Unveil;
-    animation-duration: 15s;
-}
-
-#sidebarScene1Line4 {
-    position: absolute;
-    top: 320px;
-    left: 18px;
-    font-size: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
-    color: white;
-
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-
-    animation-name: Line1Unveil;
-    animation-duration: 20s;
-}
-
-#bannerbutton {
-    position: absolute;
-    bottom: 20px;
-    left: 100%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #0494bc;
-    color: #0679a3;
-    cursor: pointer;
-    border: none;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-#button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #ff5733;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-@keyframes background-zoomOut {
-    0%{
-        transform: scale(1.2);
-    }
-
-    70%{
-        transform: scale(1);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-}
-
 @keyframes Line1Unveil {
     0%{
         width:10%
@@ -551,4 +387,99 @@ section {
     100%{
         width:100%
     }
+}
+
+#sidebarAd {
+    overflow: hidden;
+    width: 400px;
+    height: 800px;
+    margin-left: 20px;
+}
+
+#sidebarScene1 {
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 800px;
+    visibility: visible;
+}
+
+#sidebarScene1 > img {
+    height: auto;
+    display: block;
+    max-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+#sidebarScene1 > .title {
+    position: absolute;
+    font-size: 28px;
+    left: 40px;
+    top: 680px;
+    color: rgb(255, 255, 255);
+}
+
+
+#sidebarScene2 {
+    position: absolute;
+    overflow: hidden;
+
+    width: 400px;
+    height: 800px;
+    visibility: hidden;
+}
+
+#sidebarScene2 > img {
+    height: auto;
+    display: block;
+    max-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+#sidebarScene2 > .title {
+    position: absolute;
+    font-size: 28px;
+    left: 40px;
+    top: 680px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebarScene3 {
+    position: absolute;
+    overflow: hidden;
+
+    width: 400px;
+    height: 800px;
+    visibility: hidden;
+}
+
+#sidebarScene3 > img {
+    height: auto;
+    display: block;
+    max-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+#sidebarScene3 > .title {
+    position: absolute;
+    font-size: 28px;
+    left: 40px;
+    top: 680px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebarReplay {
+    position: absolute;
+    font-size: 30px;
+    left: 120px;
+    top: 20px;
+}
+
+
 
