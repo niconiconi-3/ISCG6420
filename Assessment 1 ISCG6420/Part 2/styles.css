@@ -94,7 +94,7 @@ section {
 }
 
 #bannerAd {
-    /* hard coded dimensions to avoid animation scaling issues */
+
     width: 1000px;
     height: 200px;
 
@@ -118,12 +118,255 @@ section {
 
 }
 
+#bannerScene1{
+    position: absolute;
+    width: 100px;
+    top: -60px;
+    right: -30px;
+    animation-name: bannerScene-move;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+#bannerScene2{
+    position: absolute;
+    width: 1000px;
+    top: 0px;
+    right: 0px;
+    animation-name: bannerScene-zoomOut;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bannerScene-zoomOut{
+ 
+    50% {
+        transform: scale(1.2);
+        visibility: hidden;
+    }
+
+    70% {
+        transform: scale(1);
+    
+    }
+
+    100% {
+        transform: scale(1);
+        visibility: hidden;
+             
+    }
+}
+
+@keyframes bannerScene-move {
+    0% {
+        left: 0px;
+    }
+
+    
+    100% {
+        left: -780px;
+    }  
+}
+
+#bannerScene1Line1 {
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    font-size: 10px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+   
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100px;
+
+    transform: perspective(200px) rotateX(3deg) rotateY(25deg) rotateZ(3deg) scale(1,2);
+    
+    animation-name: Line2Unveil;
+    animation-duration: 5s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene1Line2 {
+    position: absolute;
+    top: 110px;
+    left: 1000px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    transform: perspective(200px) rotateX(4deg) rotateY(25deg) rotateZ(3deg) scale(1,2);
+   
+
+    animation-name: Line2Unveil;
+    animation-duration: 5s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene1Line3 {
+    position: absolute;
+    top: 140px;
+    left: 1000px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    transform: perspective(200px) rotateX(4deg) rotateY(25deg) rotateZ(3deg) scale(1,2);
+   
+
+    animation-name: Line2Unveil;
+    animation-duration: 5s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene1Line4 {
+    position: absolute;
+    top: 170px;
+    left: 1000px;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    transform: perspective(200px) rotateX(4deg) rotateY(25deg) rotateZ(3deg) scale(1,2);
+ 
+
+    animation-name: Line2Unveil;
+    animation-duration: 5s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene2Line1 {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: rgb(53, 133, 238);
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 8s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene2Line2 {
+    position: absolute;
+    top: 140px;
+    left: 12px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: rgb(53, 133, 238);
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 8s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene2Line3 {
+    position: absolute;
+    top: 190px;
+    left: 14px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: rgb(53, 133, 238);
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 8s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene2Line4 {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: rgb(53, 133, 238);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 8s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#bannerScene2Line5 {
+    position: absolute;
+    top: 190px;
+    left: 660px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 8s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
 #sidebarAd {
     overflow: hidden;
     width: 350px;
     height: 800px;
     margin-left: 20px;
 }
+
 #sidebarScene1 {
     position: absolute;
     overflow: hidden;
@@ -134,21 +377,19 @@ section {
 
 #sidebarScene1 > img {
     position: absolute;
-    width: 1430px;
+    width: 310px;
     top: 0px;
-    left: -800px;
-}
+    left: -0px;
 
-#sidebarScene1 > .title {
-    position: absolute;
-    font-size: 50px;
-    left: 70px;
-    top: 100px;
+    animation-name: background-zoomOut;
+    animation-duration: 5s;
+
 }
 
 #sidebarScene2 {
     position: absolute;
     overflow: hidden;
+
     width: 350px;
     height: 800px;
     visibility: hidden;
@@ -156,16 +397,9 @@ section {
 
 #sidebarScene2 > img {
     position: absolute;
-    width: 1260px;
+    width: 350px;
     top: 0px;
-    left: -386px;
-}
-
-#sidebarScene2 > .title {
-    position: absolute;
-    font-size: 50px;
-    left: 70px;
-    top: 100px;
+    left: -0px;
 }
 
 #sidebarReplay {
@@ -175,4 +409,146 @@ section {
     top: 20px;
 }
 
+#sidebarScene1Line1 {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 5s;
+}
+
+#sidebarScene1Line2 {
+    position: absolute;
+    top: 180px;
+    left: 12px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 10s;
+}
+
+#sidebarScene1Line3 {
+    position: absolute;
+    top: 250px;
+    left: 14px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 15s;
+}
+
+#sidebarScene1Line4 {
+    position: absolute;
+    top: 320px;
+    left: 18px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: perspective(600px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+
+    animation-name: Line1Unveil;
+    animation-duration: 20s;
+}
+
+#bannerbutton {
+    position: absolute;
+    bottom: 20px;
+    left: 100%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #0494bc;
+    color: #0679a3;
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+@keyframes background-zoomOut {
+    0%{
+        transform: scale(1.2);
+    }
+
+    70%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes Line1Unveil {
+    0%{
+        width:10%
+    }
+
+    12.5%{
+        width:100%
+    }
+
+    100%{
+        width:100%
+    }
+
+    
+}
+
+@keyframes Line2Unveil {
+    0%{
+        width:10%
+    }
+
+    12.5%{
+        width:100%
+    }
+
+    100%{
+        width:100%
+    }
 
