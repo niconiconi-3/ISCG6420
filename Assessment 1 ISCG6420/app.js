@@ -13,10 +13,18 @@ window.onload = function () {
             case 0:
                 scenes[0].style.visibility = "visible";
                 scenes[1].style.visibility = "hidden";
+                scenes[2].style.visibility = "hidden";
                 break;
             case 1:
                 scenes[0].style.visibility = "hidden";
                 scenes[1].style.visibility = "visible";
+                scenes[2].style.visibility = "hidden";
+                break;
+
+            case 2:
+                scenes[0].style.visibility = "hidden";
+                scenes[1].style.visibility = "hidden";
+                scenes[2].style.visibility = "visible";
                 break;
             default:
                 break;
