@@ -17,7 +17,7 @@ html {
 html,
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     color: #000;
     background-color: #cecece;
@@ -92,6 +92,17 @@ section {
         ". banner banner banner ."
         ". main main main sidebar";
 }
+.grid-2c {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 50px;
+}
+
+.container-half {
+    padding: 10px;
+    text-align: center;
+    min-height: 200px;
+}
 
 #bannerAd {
 
@@ -116,6 +127,11 @@ section {
 
     background-color: #51aae6;
 
+}
+
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+    background-color: #206E32;
 }
 
 #bannerScene1{
@@ -412,7 +428,7 @@ section {
     overflow: hidden;
     width: 400px;
     height: 800px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #sidebarScene1 {
@@ -497,6 +513,62 @@ section {
 
     animation-timing-function: initial;
     animation-iteration-count: infinite;
+}
+
+
+.form-page {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+}
+
+
+.form-page .row {
+    width: 100%;
+    float: left;
+    padding: 8px 8px 2px 0px;
+
+}
+
+.form-page label input[type="text"] {
+    width: 70%;
+    float: right;
+    line-height: 150%;
+}
+
+.form-page label input[type="radio"] {
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.form-page button {
+    padding: 4px 8px;
+    margin: 8px;
+    width: 25%;
+}
+
+.form-page button.next {
+    float: right;
+}
+
+.form-page button.previous {
+    float: left;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    margin-top: 20px;
+}
+
+thead {
+    color: #fff;
+    background-color: #206E32;
 }
 
 

@@ -36,11 +36,109 @@
             <div id="bannerScene2Line4">SUMMER SPECIAL!</div> 
             <div id="bannerScene2Line5">Zhihan Chen 1573241</div>
           </a>
-        s</div>  
+        </div>  
       </div>
     </div>
     <main class="main">
-      <h1>Main content</h1>
+      <h1>Parakai Springs Ticket Booking</h1>
+      <div class="grid-2c">
+        <div class="container-half card">
+          <progress value="25" max="100"></progress>
+          <!-- Step 1: Date and Attendees -->
+          <div id="form-page1" class="form-page" style="display: block">
+            <div> <!-- page title -->
+              <h3>Date and Attendees</h3>
+              <p>Please fill in this form</p>
+            </div>
+            <div> <!-- page input fields -->
+              <label for="date" class="row">
+                Date of Attendance:
+                <input type="date" id="date-attendance" />
+            </label>
+              <label for="adults" class="row">
+                    Adults:
+                    <input type="number" id="adults-count" min="0" />
+                </label>
+                <label for="children" class="row">
+                    Children:
+                    <input type="number" id="children-count" min="0" />
+                </label>
+            </div>
+            <div>
+                <button class="next" type="button" onclick="showPage(2)">Next Page</button>
+            </div>
+        </div>
+            <!-- Step 2: Contact Information -->
+        <div id="form-page2" class="form-page" style="display: none">
+          <div>
+              <h3>Contact Information</h3>
+          </div>
+          <div>
+              <label for="name">
+                  Contact Name:
+                  <input type="text" id="contact-name" />
+              </label>
+              <label for="email">
+                  Email Address:
+                  <input type="email" id="contact-email" />
+              </label>
+          </div>
+          <div>
+              <button class="previous" type="button" onclick="showPage(1)">Previous Page</button>
+              <button class="next" type="button" onclick="showPage(3)">Next Page</button>
+          </div>
+      </div>
+      <!-- Step 3: Additional Options -->
+      <div id="form-page3" class="form-page" style="display: none">
+          <div>
+              <h3>Additional Options</h3>
+          </div>
+          <div>
+              <label for="ticket-color">
+                  Ticket Colour:
+                  <input type="color" id="ticket-color">
+              </label>
+              <fieldset>
+                  <legend>Optional Storage Locker</legend>
+                  <label>
+                      <input type="radio" name="locker" value="Yes"> Yes
+                  </label>
+                  <label>
+                      <input type="radio" name="locker" value="No" checked> No
+                  </label>
+              </fieldset>
+          </div>
+          <div>
+              <button class="previous" type="button" onclick="showPage(2)">Previous Page</button>
+              <button class="next" type="button" onclick="showPage(4)">Next Page</button>
+          </div>
+      </div>
+      <!-- Step 4: Confirmation -->
+      <div id="form-page4" class="form-page" style="display: none">
+          <div>
+              <h3>Terms & Conditions</h3>
+          </div>
+          <div>
+              <label>
+                  <input type="checkbox" id="terms"> I have read the terms and conditions
+              </label>
+          </div>
+          <div>
+              <button class="previous" type="button" onclick="showPage(3)">Previous Page</button>
+              <button class="next" type="button" onclick="submitData()">Submit</button>
+          </div>
+      </div>
+  </div>
+  <div class="container-half card" style="overflow: scroll">
+      <table id="collected-data">
+          <thead>
+              <tr>
+                  <td>Booking Summary</td>
+              </tr>
+          </thead>
+      </table>
+  </div>
+</div>
     </main>
     <div class="sidebar">
       <div id="sidebarAd">
@@ -54,14 +152,13 @@
            <img src="./assets/hayffield-l-b59Yq7_GLN8-unsplash.jpg" alt="food"/>  
         </div>
         <div id="sidebarScene3">
-          <button id="sidebarReplay" type="button">Lean More</button>
            <div class="title">BOOK YOUR SEAT NOW</div>
            <img src="./assets/josh-nezon-R1Zb58LmwIY-unsplash.jpg" alt="railway2" />
+          <div id="sidebarReplay">
         </div>
       </div>
     </div>
-  </div>
-  
+  </div> 
 </body>
 <script src="./app.js"></script>
 
