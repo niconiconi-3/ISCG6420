@@ -17,7 +17,7 @@ html {
 html,
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #000;
     background-color: #cecece;
@@ -508,13 +508,43 @@ progress::-webkit-progress-value {
     left: 34px;
     top: 439px;
     color: rgb(255, 255, 255);
-    animation-name: Line2Unveil;
-    animation-duration: 8s;
-
-    animation-timing-function: initial;
-    animation-iteration-count: infinite;
 }
 
+#sidebarScene3Line1 {
+    position: absolute;
+    font-size: 21px;
+    left: 35px;
+    top: 630px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebarScene3Line2 {
+    position: absolute;
+    font-size: 21px;
+    left: 142px;
+    top: 630px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebarScene3Line3 {
+    position: absolute;
+    font-size: 21px;
+    left: 280px;
+    top: 630px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebarScene3Line4 {
+    position: absolute;
+    font-size: 13px;
+    left: 300px;
+    top: 14px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+}
 
 .form-page {
     position: relative;
